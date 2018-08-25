@@ -493,16 +493,16 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #gtco-about,
 #gtco-practice-areas,
-#gtco-our-team,
+#gtco-soft,
 #gtco-contact {
   padding: 7em 0;
   clear: both;
 }
 
 #gtco-about .img-shadow {
+  border-style: ridge;
   position: relative;
-  background: #000;
-  width: 100%;
+  background: rgb(66, 64, 64);
   float: left;
 }
 #gtco-about .img-shadow img {
@@ -562,10 +562,10 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 24px;
 }
 
-#gtco-our-team .heading {
+#gtco-soft .heading {
   position: relative;
 }
-#gtco-our-team .heading .subtle-text {
+#gtco-soft .heading .subtle-text {
   position: absolute;
   bottom: -1.6em;
   left: 0;
@@ -576,30 +576,30 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: -1;
   line-height: 1;
 }
-#gtco-our-team .heading .subtle-text span {
+#gtco-soft .heading .subtle-text span {
   display: block;
 }
-#gtco-our-team .team-item {
+#gtco-soft .team-item {
   margin-bottom: 9em;
 }
-#gtco-our-team .team-item:last-child {
+#gtco-soft .team-item:last-child {
   margin-bottom: 0;
 }
-#gtco-our-team .gtco-team-reverse .img-shadow,
-#gtco-our-team .gtco-team .img-shadow {
+#gtco-soft .gtco-team-reverse .img-shadow,
+#gtco-soft .gtco-team .img-shadow {
   position: relative;
   background: #000;
   width: 100%;
   float: left;
   margin-bottom: 30px;
 }
-#gtco-our-team .gtco-team-reverse .img-shadow img,
-#gtco-our-team .gtco-team .img-shadow img {
+#gtco-soft .gtco-team-reverse .img-shadow img,
+#gtco-soft .gtco-team .img-shadow img {
   position: relative;
   top: -20px;
   right: -20px;
 }
-#gtco-our-team .gtco-team .img-shadow img {
+#gtco-soft .gtco-team .img-shadow img {
   top: -20px;
   left: -20px;
 }

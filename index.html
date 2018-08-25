@@ -1,18 +1,15 @@
 <!DOCTYPE HTML>
-<!--
-	Justice by freehtml5.co
-	Twitter: http://twitter.com/fh5co
-	URL: http://freehtml5.co
--->
+
 <html>
 	<head>
+	<link rel="shortcut icon" href="images/zombie.png" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Portfolio | Thierry SUY	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -38,7 +35,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.scss">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Flexslider -->
 	<link rel="stylesheet" href="css/flexslider.css">
@@ -69,17 +66,15 @@
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="about">À Propos</a></li>
 						<li><a href="#" data-nav-section="practice-areas">Activités</a></li>
+						<li><a href="#" data-nav-section="soft">Outils</a></li>
 						<li class="btn-cta"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
-						<!-- For external page link -->
-						<!-- <li><a href="http://freehtml5.co/" class="external">External</a></li> -->
 					</ul>
 				</div>
 			</div>
-			
 		</div>
 	</nav>
 
-	<section id="gtco-hero" class="gtco-cover" style="background-image: url(images/image04.jpg);"  data-section="home"  data-stellar-background-ratio="0.5">
+	<section id="gtco-hero" class="gtco-cover" style="background-image: url(images/wallpaper.jpg); max-width:100%;height:auto;"  data-section="home"  data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -92,7 +87,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="gtco-about" data-section="about">
 		<div class="container">
 			<div class="row row-pb-md">
@@ -105,22 +100,22 @@
 			<div class="row">
 				<div class="col-md-6 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
 					<div class="img-shadow">
-						<img src="images/titi33.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+						<img src="images/titi2.jpg" width="400px" height="400px" class="img-responsive">
 					</div>
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 					<h2 class="heading-colored">Autonome &amp; Rigoureux</h2>
-					<p>Voici les deux mots qui me caractérise le plus. Je me présente, je m'appelle Thierry, 23 ans ; et je souhaite la bienvenue sur mon site ! Geek dans l'âme, depuis longtemps j'ai toujours aimé l'informatique. J'ai commencé au lycée avec un BAC STI2D puis je me suis dirigé vers un DUT Réseaux & Télécoms afin de travailler sur les réseaux d'entreprise pour comprendre la mécanique et en découle. Après ce diplôme, je me suis orienté sur le métier du test, de là, je me suis demandé quel pourrait être la valeur ajoutée à ce genre de métier... LE DEVELOPPEMENT WEB, pardi ! J'ai donc continuer avec un Bachelor en développement web et pour terminer un Master dans l'IT Management.</p>
+					<p>Voici les deux mots qui me caractérise le plus. Je me présente, je m'appelle Thierry, 23 ans ; et je vous souhaite la bienvenue sur mon site ! Geek dans l'âme, depuis longtemps j'ai toujours aimé l'informatique. J'ai commencé au lycée avec un BAC STI2D puis je me suis dirigé vers un DUT Réseaux & Télécoms afin de travailler sur les réseaux d'entreprise pour comprendre la mécanique qui en découle. Après ce diplôme, je me suis orienté sur le métier du test, de là, je me suis demandé quel pourrait être la valeur ajoutée à ce genre de métier... LE DEVELOPPEMENT WEB, pardi ! J'ai donc continuer avec un Bachelor en développement web et pour terminer un Master dans l'IT Management pour boucler mon cursus scolaire. Vous l'aurez comprit, j'ai 3 cordes à mon arc, ce qui me permet d'être pluri-disciplinaire dans les métiers du numérique. Je vous invite à naviguer dans la partie <a href="#activities">Activités</a> pour en savoir davantage. Merci !</p>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> 
 
 	<section id="gtco-practice-areas" data-section="practice-areas">
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-					<h1>Activités</h1>
+					<h1 id="activities">Activités</h1>
 					<p class="sub">Voici les différents domaines d'activités où je peux vous aider dans votre projet !</p>
 					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Practice <span>Areas</span></p>
 				</div>
@@ -133,7 +128,7 @@
 						</div>
 						<div class="gtco-copy">
 							<h3>Testing</h3>
-							<p>Avec 3 années d'expérience dans le domaine du test manuel & automatisé, je peux vous en tant qu’ingénieur assurance qualité, d'être responsable du développement / maintenance des tests automatisés, de la rédaction et de la maintenance des tests manuels sur tous les sites Web et applications de votre produit ainsi que du développement et de l’amélioration des processus d’assurance qualité. </br>Tests automatisés</br>Tests de non-régression</br>Tests d'intégration</br>Tests d'acceptation</br>Tests unitaires/API</p>
+							<p>Avec 3 années d'expérience dans le domaine du test manuel & automatisé, je peux vous proposer mes services en tant qu’ingénieur assurance qualité, c'est à dire : être responsable du développement / maintenance des tests automatisés, de la rédaction et de la maintenance des tests manuels sur tous les sites Web et applications de votre produit ainsi que du développement et de l’amélioration des processus d’assurance qualité. </br>Tests automatisés</br>Tests de non-régression</br>Tests d'intégration</br>Tests d'acceptation</br>Tests unitaires/API</p>
 						</div>
 					</div>
 
@@ -153,11 +148,33 @@
 						</div>
 						<div class="gtco-copy">
 							<h3>Développment</h3>
-							<p>Ayant fait un Master de développement web, je peux en tant que webmaster être responsable de la gestion et du suivi d'un site Web au quotidien. Ajout de contenus (textes, images, sons...) et j'interviens en cas de problème technique. </br>Systèmes d'exploitations utilisés : Windows & Linux. </br>Langages utilisés : HTML / CSS / JS / Python /C#  </p>
+							<p>Pour finir avec un Master de développement web, je peux en tant que webmaster concevoir un site basique avec son back-office, être responsable de la gestion et du suivi d'un site Web au quotidien. Ajout de contenus (textes, images, sons...) et j'interviens en cas de problème technique. </br>Systèmes d'exploitations utilisés : Windows & Linux. </br>Langages utilisés : HTML / CSS / JS / Python / C#  </p>
 						</div>
 					</div>
-
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-soft" data-section="soft">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Outils</h1>
+					<p class="sub">Voici les différents outils que j'utilise dans le domaine de l'IT en espérant que cela coïncide avec vos projets :)</p>
+					<!-- <p class="subtle-text animate-box" data-animate-effect="fadeIn">Outils</p> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+								
+							
+
+						</div>		
+					</div>			
+				</div>			
 			</div>
 		</div>
 	</section>
@@ -167,7 +184,7 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
 					<h1>Me Contacter</h1>
-					<p class="sub">N'hésitez pas à m'envoyer un message pour discuter de votre opportunités ou projet ! :)</p>
+					<p class="sub">N'hésitez pas à m'envoyer un message pour parler de votre opportunité ou de votre projet ! :)</p>
 					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Contact</p>
 				</div>
 			</div>
@@ -178,12 +195,12 @@
 				<div class="col-md-6 col-md-push-6 animate-box">
 					<form action="#">
 						<div class="col-md-12 form-group">
-							<div class="col-md-6">
+							<div class="col-sm-6">
 							<label for="name" class="sr-only">Prénom</label>
 							<input type="text" name="prenom" class="form-control" id="prenom" placeholder="Prénom">
 							</div>
 
-							<div class="col-md-6">
+							<div class="col-sm-6">
 							<label for="name" class="sr-only">Nom</label>
 							<input type="text" name="nom" class="form-control" id="nom" placeholder="Nom">
 							</div>
@@ -195,8 +212,8 @@
 						</div>
 
 						<div class="form-group">
-								<label for="message" class="sr-only">Sujet</label>
-								<textarea name="objet" id="sujet" class="form-control" placeholder="Sujet"></textarea>
+								<label for="message" class="sr-only">Objet</label>
+								<textarea name="objet" id="objet" class="form-control" placeholder="Objet"></textarea>
 							</div>
 
 						<div class="form-group">
@@ -209,26 +226,23 @@
 						</div>
 					</form>
 				</div>
-				
 			</form>
-
 				<div class="col-md-4 col-md-pull-6 animate-box">
 					<div class="gtco-contact-info">
 						<ul>
 							<li class="address">10 Mail de la Résistance, 94380 Bonneuil sur Marne, FRANCE</li>
 							<li class="phone">+33 6 24 59 96 03</li>
 							<li class="email"><a href="mailto:suy.thierry21@gmail.com">suy.thierry21@gmail.com</a></li>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.8701233046895!2d2.482864316062175!3d48.76527647927842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60b7b0299232b%3A0xc2cd3fa57ee61612!2s10+Mail+de+la+R%C3%A9sistance%2C+94380+Bonneuil-sur-Marne!5e0!3m2!1sfr!2sfr!4v1534863562146" width="500" height="300" frameborder="10" style="border-style:initial; border:2px; padding-right: 50px" allowfullscreen></iframe>
 						</ul>
 					</div>
 				</div>
-			
 			</div>
 		</div>
 	</section>
 	
 	<footer id="gtco-footer" role="contentinfo">
 		<div class="container">
-			
 			<div class="row copyright">
 				<div class="col-md-12">
 					<p class="pull-left">
@@ -241,7 +255,6 @@
 					</p>
 				</div>
 			</div>
-
 		</div>
 	</footer>
 	</div>

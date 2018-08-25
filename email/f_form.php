@@ -8,15 +8,15 @@
 $destinataire = 'suy.thierry21@gmail.com';
  
 // copie ? (envoie une copie au visiteur)
-$copie = 'oui'; // 'oui' ou 'non'
+$copie = 'non'; // 'oui' ou 'non'
  
 // Messages de confirmation du mail
 $message_envoye = "Votre message nous est bien parvenu !";
 $message_non_envoye = "L'envoi du mail a échoué, veuillez réessayer SVP.";
  
 // Messages d'erreur du formulaire
-$message_erreur_formulaire = "Vous devez d'abord <a href=\"../public/contact.php\">envoyer le formulaire</a>.";
-$message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur. <a href=\"../public/contact.php\">Retour</a>";
+$message_erreur_formulaire = "Vous devez d'abord <a href=\"../index.html\">envoyer le formulaire</a>.";
+$message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur.";
  
 /*
   ********************************************************************************************
@@ -24,7 +24,7 @@ $message_formulaire_invalide = "Vérifiez que tous les champs soient bien rempli
   ********************************************************************************************
 */
  
-// on teste si le formulaire a été soumis
+//    on teste si le formulaire a été soumis
 if (!isset($_POST['envoi']))
 {
   // formulaire non envoyé
@@ -67,9 +67,6 @@ else
   $email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
  
 
-// var_dump($_POST);
-
-
   if (($prenom != '') && ($nom != '') && ($email != '') && ($objet != '') && ($message != ''))
   {
     // les 4 variables sont remplies, on génère puis envoie le mail
@@ -77,7 +74,7 @@ else
     $headers .= 'From:'.$nom.' '.$prenom.'<'.$email.'>' . "\r\n" .
         'Reply-To:suy.thierry21@gmail.com\r\n' .
         'Content-Type: text/plain; charset="utf-8"; DelSp="Yes"; format=flowed '."\r\n" .
-        'Content-Disposition: inline'. "\r\n" .
+        'Content-DisposiJeantion: inline'. "\r\n" .
         'Content-Transfer-Encoding: 7bit'." \r\n" .
         'X-Mailer:PHP/'.phpversion();
   
@@ -119,7 +116,9 @@ else
  
     if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
     {
-        header("Location:../public/contact.php");
+        echo "Thanks for your message";
+        sleep(5);
+        header("Location:../");
     }
     else
     {
@@ -129,7 +128,7 @@ else
   else
   {
     // une des 3 variables (ou plus) est vide ...
-    echo '<p>'.$message_formulaire_invalide.' <a href="index.html">Retour au formulaire</a></p>'."\n";
+    echo '<p>'.$message_formulaire_invalide.' <a href="../index.html">Retour au formulaire</a></p>'."\n";
   };
 }; // fin du if (!isset($_POST['envoi']))
 ?>
