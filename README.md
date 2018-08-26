@@ -1,6 +1,6 @@
 # Portfolio
 
-About link: https://thierrysuy.com
+Website : https://thierrysuy.com
 
 Libraies, Fonts, Icons used:
 
